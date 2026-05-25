@@ -6,3 +6,64 @@ html, body{
     width: 100%;
     height: 100%;
 }
+.main-header {
+    background-color: #1a1a2e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* Logo Styling */
+.logo a {
+    color: #ffffff;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    letter-spacing: 1px;
+}
+
+.logo a span {
+    color: #00adb5; /* Accent color for the logo */
+}
+
+/* Navigation Links Layout */
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+}
+
+.nav-links a {
+    color: #eeeeee;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+/* Hover & Active States */
+.nav-links a:hover,
+.nav-links a.active {
+    color: #00adb5;
+}
+
+/* Call to Action (CTA) Button */
+.cta-button {
+    background-color: #00adb5;
+    color: #ffffff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 600;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.cta-button:hover {
+    background-color: #007c82;
+    transform: translateY(-2px);
+}
